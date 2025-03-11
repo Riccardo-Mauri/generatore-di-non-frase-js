@@ -16,16 +16,15 @@ mioBottone.addEventListener("click", function(){
     console.log("bottone premuto!");
     //prendo la parola dal mio primo array
     const primaParola = primoArray[Math.floor(Math.random() * primoArray.length)];
-    console.log(primaParola);
-    
+
     //prendo la parola dal mio secondo array
     const secondaParola = secondoArray[Math.floor(Math.random() * secondoArray.length)];
-    console.log(secondaParola);
-
-    //prendo la parola dal mio terzo array
-    const terzaParola = terzoArray[Math.floor(Math.random() * primoArray.length)];
-    console.log(terzaParola);
     
+    //prendo la parola dal mio terzo array
+    const terzaParola = terzoArray[Math.floor(Math.random() * terzoArray.length)];
+    
+    console.log("parole scelte casualmente:",primaParola, secondaParola, terzaParola);
+
     //ora salvo le mie parole nella pagian d simulare la creazione di una frase
     const fraseCasuale = `${primaParola} ${secondaParola} ${terzaParola}`
 
